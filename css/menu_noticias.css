@@ -1,0 +1,66 @@
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+/*Header*/
+header {
+    background-color: #121629;
+    font-weight: bold;
+    padding: 10px 0; 
+}
+.title-header{
+    font-size: 34px;
+    color: whitesmoke;
+}
+/*Barra de navegacion*/
+.navbar{
+    background-color: white;
+    padding: 1rem;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #121629;
+    font-size: 16px;
+}
+/*Seccion Noticias*/
+.noticia{
+    padding: 20px 20px 40px 20px;
+}
+.card-img-bottom{
+    border-radius: 0%;
+}
+/*Tabla de contenido*/
+.title-tabla {
+    font-weight: bold;
+}
+.container-tabla {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+.tabla-noticias {
+    width: 100%;
+    border-collapse: collapse; /*Elimina el espacio entre celdas*/
+    border: 1px solid gray;
+}
+.lista-noticias {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.lista-noticias li {
+    margin: 10px 0;
+}
+.lista-noticias a {
+    text-decoration: none;
+    color: gray;
+}
+.lista-noticias a:hover {
+    text-decoration: underline;
+}

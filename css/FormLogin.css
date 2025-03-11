@@ -1,0 +1,67 @@
+/*Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+
+/*Header*/
+header {
+    background-color: #121629;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.title-header {
+    color: whitesmoke;
+}
+/*Barra de navegacion*/
+.navbar {
+    background-color: white;
+    padding: 1rem;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #121629;
+    font-size: 16px;
+}
+/* Formulario */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    padding: 20px;
+}
+.login-form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.login-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.button-container .btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 0;
+}
+.button-container .btn:first-child {
+    margin-left: 0;
+}
+.button-container .btn:last-child {
+    margin-right: 0;
+}

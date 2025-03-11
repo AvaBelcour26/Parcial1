@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/menu_about.css">
+    <!--Titulo-->
+    <title>Menu About Equipo Portal Noticias</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="title-header text-center">Portal noticias</h1>
+    </header>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="menu_noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FormLogin.html">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FormRegistro.html">Sign Up</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu_aboutMision.html">Misión</a></li>
+                            <li><a class="dropdown-item" href="menu_aboutVision.html">Visión</a></li>
+                            <li><a class="dropdown-item" href="menu_aboutEquipo.html">Equipo de trabajo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="main m-4">
+                <!--Carrusel-->
+                <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <img class="testimonio-imagen rounded-circle" src="../images/cliente1.svg" alt="Foto del Empleado 1">
+                                <p class="testimonio-texto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad ipsum, fuga, omnis doloribus maiores ab sed in laborum quis, ea tempore pariatur illo nisi dolores! Magnam corporis a tempora!
+                                </p>
+                                <div class="testimonio-info">
+                                    <p class="cliente">Lucas</p>
+                                    <p class="cargo">Comunicador de Portal Noticias</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <img class="testimonio-imagen rounded-circle" src="../images/cliente2.svg" alt="Foto del Empleado 2">
+                                <p class="testimonio-texto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad ipsum, fuga, omnis doloribus maiores ab sed in laborum quis, ea tempore pariatur illo nisi dolores! Magnam corporis a tempora!
+                                </p>
+                                <div class="testimonio-info">
+                                    <p class="cliente">Luna</p>
+                                    <p class="cargo">Gerente de Portal Noticias</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <img class="testimonio-imagen rounded-circle" src="../images/cliente3.svg" alt="Foto del Empleado 3">
+                                <p class="testimonio-texto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad ipsum, fuga, omnis doloribus maiores ab sed in laborum quis, ea tempore pariatur illo nisi dolores! Magnam corporis a tempora!
+                                </p>
+                                <div class="testimonio-info">
+                                    <p class="cliente">Leonardo</p>
+                                    <p class="cargo">Director de Portal Noticias</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </section>
+    </main>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

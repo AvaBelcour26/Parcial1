@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../CSS/FormRegistro.css">
+        <!--Titulo-->
+        <title>Registro Portal Noticias</title>
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="title-header text-center">Portal Noticias</h1>
+    </header>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="menu_noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FormLogin.html">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FormRegistro.html">Sign Up</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu_aboutMision.html">Misión</a></li>
+                            <li><a class="dropdown-item" href="menu_aboutVision.html">Visión</a></li>
+                            <li><a class="dropdown-item" href="menu_aboutEquipo.html">Equipo de trabajo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Titulo-->
+    <div class="container container-registro my-4">
+        <div class="title">
+            <h1 class=" text-center p-4">Ingrese los datos para registrarse</h1>
+        </div>
+        <!--Campos del formulario-->
+        <form id="registroForm">
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="inputName" name="nombres">
+                    <div id="nameError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputLastName" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="inputLastName" name="apellidos">
+                    <div id="lastNameError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email">
+                    <div id="emailError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="inputPhone" name="telefono">
+                    <div id="phoneError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-2">
+                    <label for="inputEstrato" class="form-label">Estrato</label>
+                    <input type="number" class="form-control" id="inputEstrato" name="estrato" min="1" max="6" placeholder="5">
+                    <div id="estratoError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputFecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="inputFecha" name="fecha_nacimiento">
+                    <div id="fechaError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="grupoSanguineo" class="form-label">Grupo Sanguineo</label>
+                    <select class="form-select" id="grupoSanguineo" name="grupo_sanguineo">
+                        <option selected disabled>Seleccione su grupo sanguineo</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <div id="grupoError" class="text-danger mt-1"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Género</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoMasculino" name="genero" value="masculino" checked>
+                        <label class="form-check-label" for="generoMasculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoFemenino" name="genero" value="femenino">
+                        <label class="form-check-label" for="generoFemenino">Femenino</label>
+                    </div>
+                    <div id="generoError" class="text-danger mt-1"></div>
+                </div>
+                
+                <div class="col-md-8">
+                    <label class="form-label">Actividades Favoritas</label>
+                    <div class="row container-actividades">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="actividadFutbol" name="actividades" value="futbol" checked>
+                                <label class="form-check-label" for="actividadFutbol">Fútbol</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="actividadBaloncesto" name="actividades" value="baloncesto">
+                                <label class="form-check-label" for="actividadBaloncesto">Baloncesto</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="actividadVoleibol" name="actividades" value="voleibol">
+                                <label class="form-check-label" for="actividadVoleibol">Voleibol</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="actividadCiclismo" name="actividades" value="ciclismo">
+                                <label class="form-check-label" for="actividadCiclismo">Ciclismo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="actividadesError" class="text-danger mt-1"></div>
+                </div>
+
+                <!--Botones de registro y cancelar-->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success btn-registro me-2" id="btnRegistrar">Registrar</button>
+                    <a href="FormLogin.html" class="btn btn-danger btn-registro" id="btnCancelar">Cancelar</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!--JS-->
+    <script src="../js/FormRegistro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

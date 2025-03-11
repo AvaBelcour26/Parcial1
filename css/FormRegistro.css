@@ -1,0 +1,63 @@
+/*Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+/*Header*/
+header {
+    background-color: #121629;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.title-header {
+    color: whitesmoke;
+}
+/*Barra de navegacion*/
+.navbar {
+    background-color: white;
+    padding: 1rem;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #121629;
+    font-size: 16px;
+}
+/*Formulario*/
+.container-registro{
+    background-color: white;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container-actividades{
+    padding: 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+.btn-registro {
+    padding: 10px 30px;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .container-registro {
+        width: 95%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-registro {
+        width: 95%;
+        padding: 20px;
+    }
+}
